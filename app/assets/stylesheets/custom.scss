@@ -1,0 +1,60 @@
+html {
+    background: radial-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.999) ), url('vim.png');
+    min-height: 900px;
+    background-repeat: no-repeat;
+
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
+}
+
+.navbar-inverse {
+  background-color: transparent;
+  border-color: silver;
+}
+
+.nav-action {
+  padding: 25px;
+  margin-right: 20px;
+  font-size: 19px;
+}
+
+a{
+  color: silver;
+}
+
+
+a:hover {
+  color: #222222;
+  text-decoration: none;
+}
+
+.social-btn {
+  font-size: 2em;
+  color: #222222;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.social-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 45% ;
+}
+/*
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+*/
+
+footer{
+    width:100%;
+    min-height:100px;    
+}
+
+
+
