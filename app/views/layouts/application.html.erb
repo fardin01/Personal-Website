@@ -7,10 +7,24 @@
     <%= csrf_meta_tags %>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   </head>
-    <%= render 'shared/navbar' %>
-  <body>
-    <%= yield %>
 
+  <body>
+     <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "{ :Fardin => :Khanjani }", '#' %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home",   '#' %></li>
+        <li><%= link_to "About",   '#' %></li>
+        <li><%= link_to "Blog", '#' %></li>
+        <li><%= link_to "Resume/CV", '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="container">
+      <%= yield %>
+    </div>
     <footer class="footer navbar-fixed-bottom">
       <%= render "shared/footer" %>
     </footer>
