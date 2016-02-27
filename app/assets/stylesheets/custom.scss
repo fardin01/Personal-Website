@@ -1,40 +1,13 @@
-html {
-    background: radial-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.999) ), image-url('vim.png');
-    height: 100%;
-    background-repeat: no-repeat;
-
-}
-
-.navbar-inverse {
-  background-color: transparent;
-  border-color: silver;
-}
-
 a{
   color: silver;
 }
 
-
-
-.social-btn {
-  font-size: 2em;
-  color: #3b1212;
-  margin-left: 10px;
-  margin-right: 10px;
+a:hover {
+  text-decoration: none;
 }
 
-.social-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 45% ;
-}
 
-footer {
-    position: fixed;
-    height: 100px;
-    bottom: 0;
-    width: 100%;
-}
+
 
 
 
