@@ -15,17 +15,30 @@ body {
   overflow: auto;
 }
 
-a{
-  color: silver;
-}
-
 a:hover {
   text-decoration: none;
+  color: white;
+}
+
+.btn {
+  color: black;
+  font-size: 27px;
+}
+
+button {
+  background-color: transparent;
+  border: solid 2px black;
+  cursor: hand;
+  min-width: 200px;
 }
 
 button:hover {
-  background-color: #272727;
-  color: #fff;
+  background-color: black;
+  transition: 0.1s background-color linear, 0.1s color linear;
+}
+
+button:hover .btn{
+  color: white;
 }
 
 .nav-link {
@@ -65,18 +78,10 @@ a:active {
   text-align: center;
 }
 
-.btn-custom {
-  color: white;
-}
-
-.btn {
-}
-
 .background-1 {
   background: #ecf0f1;
   width: 100%;
   height: auto;
-  padding-bottom: 50px;
   overflow: auto; 
 }
 
@@ -89,7 +94,17 @@ a:active {
 }
 
 .profile {
-  margin-top: 50px;
+  margin-top: 85px;
+}
+
+.on-background {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
 }
 
 .bbc {
@@ -97,7 +112,8 @@ a:active {
 }
 
 .greeting {
-  margin-top: 30px;
+  margin-top: 80px;
+  color: black;
 }
 
 .card {
@@ -106,4 +122,12 @@ a:active {
   margin: 0 auto 100px;
   display: inline-block;
 }
+
+.sunset {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+
 

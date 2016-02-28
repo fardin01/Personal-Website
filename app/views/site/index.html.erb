@@ -1,12 +1,13 @@
 <div class="background-1">
-  <div class="profile">
+  <div class="profile on-background">
     <img class="profile-pic centered" src="/assets/profile1.jpg" />
     <h1 class="centered greeting">Hey. My name's Fardin. You can call me Freddie.</h1>
-    <div class="centered">
-      <button><%= link_to "My story",about_path, class: "btn btn-custom" %></button>
+    <div class="centered" style="margin-top: 35px">
+      <button><%= link_to "My story",about_path, class: "btn" %></button>
       <button><%= link_to "My resume",resume_path, class: "btn" %></button>
     </div>
   </div>
+  <img src="/assets/bp4.jpg" class="sunset">
 </div>
 
 <div class="background-2">
@@ -28,6 +29,12 @@
         </div>
       </div>
     <% end %>
+  </div>
+</div>
+
+<div class="background-2">
+  <div class="profile centered">
+      <button><%= link_to "Interested? Say hello!",resume_path, class: "btn" %></button>
   </div>
 </div>
 
