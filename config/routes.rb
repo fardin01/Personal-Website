@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get "resume", to: 'site#cv'
   get 'contact', to: 'site#contact'
 
-  resources :blogs
+  resources :blog
 
 end

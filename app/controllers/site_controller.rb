@@ -1,5 +1,6 @@
 class SiteController < ApplicationController
   def index
+    @blogs = Blog.first(3)
   end
 
   def show
@@ -12,3 +13,5 @@ class SiteController < ApplicationController
   end
 
 end
+
+

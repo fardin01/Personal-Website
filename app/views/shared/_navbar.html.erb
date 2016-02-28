@@ -1,13 +1,37 @@
- <header class="navbar navbar-static-top navbar-inverse">
+<!--
+  <nav class="navbar navbar-light">
   <div class="container">
-    <%= link_to "FARDIN KHANJANI", '/', class: 'logo' %>
+    <%#= link_to "FARDIN KHANJANI", '/', class: 'logo' %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Blog", blogs_path %></li>
-        <li><%= link_to "Resume/CV", resume_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
+        <li><%#= link_to "About", about_path %></li>
+        <li><%#= link_to "Blog", blog_index_path %></li>
+        <li><%#= link_to "Resume/CV", resume_path %></li>
+        <li><%#= link_to "Contact", contact_path %></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
+-->
+
+<nav class="navbar navbar-light">
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+    &#9776;
+  </button>
+  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+    <a class="navbar-brand" href="#">FARDIN KHANJANI</a>
+    <ul class="nav navbar-nav pull-xs-right">
+      <li class="nav-item">
+        <%= link_to "About", about_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Blog", blog_index_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Resume/CV", resume_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", contact_path, class: 'nav-link' %>
+      </li>
+    </ul>
   </div>
-</header>
+</nav>
