@@ -6,8 +6,68 @@ a:hover {
   text-decoration: none;
 }
 
+h1 {
+  font-family: adobe-garamond-pro;
+}
+
+p {
+  font-family: proxima-nova;
+  font-size: 16px;
+}
+a:active {
+  background-color: #424242;
+}
 
 
+.center-div {
+  width: 100%;
+  height: 500px;
+  background-color: green;
+}
 
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.btn-about-me {
+  width: 280px;
+  height: 60px;
+  font-size: 35px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: #ADD8E6;
+  color: white;
+  display: inline-block;
+}
+
+.background-1 {
+  background: #ecf0f1;
+  width: 100%;
+  height: 650px;
+  overflow: auto; 
+}
+
+.background-2 {
+  @extend .background-1;
+  background: #bdc3c7;
+  height: 350px;
+}
+
+.profile {
+  margin-top: 50px;
+}
+
+.bbc {
+  width: 50%;
+}
 
 
