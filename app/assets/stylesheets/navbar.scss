@@ -11,4 +11,9 @@
 .navbar-fixed-top {
   background-color: white;
   border-bottom: solid 1px silver;
+  min-height: 60px; /* for the fadeIn on navbar */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
 }
