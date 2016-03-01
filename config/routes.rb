@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   resources :blog
 
+  get 'download-cv', to: 'site#download'
+
 end

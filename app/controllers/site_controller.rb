@@ -12,6 +12,16 @@ class SiteController < ApplicationController
   def cv
   end
 
+  def download
+    file = "#{Rails.root}/cv.pdf"
+    if File.exists?(file)
+      send_file file, :type=>"application/pdf", :x_sendfile=>true
+    else
+      flash[:notice] = 'File not found'
+      redirect_to :index
+    end
+  end
+
 end
 
 
