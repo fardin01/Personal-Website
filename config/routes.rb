@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
   get "about", to: 'site#show'
   get "resume", to: 'site#cv'
-  get 'contact', to: 'site#contact'
 
-  resources :blog
+  resources "blog"
+  get 'contact', to: 'contacts#new'
+  post 'contacts', to: 'contacts#create'
+
 
   get 'download-cv', to: 'site#download'
 
