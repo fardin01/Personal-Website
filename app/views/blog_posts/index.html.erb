@@ -1,0 +1,24 @@
+<div class="profile on-background">
+  <h1 class="centered intro">
+    <p class="intro-p">My thoughts and</p>
+    <strong>Blog Posts</strong>
+  </h1>
+</div>
+
+<img src="/assets/blog.jpg" class="background-pic">
+
+<div class="background-1">
+  <div class="profile centered">
+    <% @blog_posts.each do |post| %>
+      <%= link_to(post) do %>
+        <div class="card enlarge">
+          <%= image_tag("#{post.photo}", class: "card-img-top") %>
+          <div class="card-block">
+            <h4 class="card-title"><%= post.title %></h4>
+            <p class="card-text"><%= truncate(post.body, length: 80) %></p>
+          </div>
+        </div>
+      <% end %>
+    <% end %><!-- link_to -->
+  </div>
+</div>

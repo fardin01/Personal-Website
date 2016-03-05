@@ -20,15 +20,19 @@
 <div class="background-1">
   <div class="profile centered">
     <h1>My latest blog posts</h1>
-    <% @blogs.each do |blog| %>
-      <div class="card">
-        <img class="card-img-top" src="http://placekitten.com/500/200">
-        <div class="card-block">
-          <h4 class="card-title"><%= blog.title %></h4>
-          <p class="card-text"><%= truncate(blog.body, length: 80) %></p>
+    <div class="container">
+    <% @blog_posts.each do |post| %>
+      <%= link_to(post) do %>
+        <div class="card enlarge">
+          <%= image_tag("#{post.photo}", class: "card-img-top") %>
+          <div class="card-block">
+            <h4 class="card-title"><%= post.title %></h4>
+            <p class="card-text"><%= truncate(post.body, length: 80) %></p>
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    <% end %><!-- link_to -->
+    </div>
   </div>
 </div>
 

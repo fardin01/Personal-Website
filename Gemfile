@@ -18,6 +18,12 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
 
+gem 'carrierwave'
+gem 'rmagick'
+gem "mini_magick"
+
+gem 'friendly_id', '~> 5.1.0'
+
 gem 'uglifier', '>= 1.3.0'
 
 gem 'coffee-rails', '~> 4.1.0'

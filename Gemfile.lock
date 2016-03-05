@@ -53,6 +53,11 @@ GEM
       railties (>= 3.1)
     builder (3.2.2)
     byebug (8.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -66,6 +71,8 @@ GEM
     execjs (2.6.0)
     font-awesome-rails (4.4.0.0)
       railties (>= 3.2, < 5.0)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -85,6 +92,7 @@ GEM
       actionmailer (>= 3.2, < 5)
       activemodel (>= 3.2, < 5)
     mime-types (2.99)
+    mini_magick (4.3.5)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
@@ -127,6 +135,7 @@ GEM
     rake (10.5.0)
     rdoc (4.2.2)
       json (~> 1.4)
+    rmagick (2.15.4)
     sass (3.4.21)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -172,15 +181,19 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   bootstrap-social-rails
   byebug
+  carrierwave
   coffee-rails (~> 4.1.0)
   font-awesome-rails
+  friendly_id (~> 5.1.0)
   jbuilder (~> 2.0)
   jquery-rails
   mail_form (~> 1.5.0.rc)
+  mini_magick
   pg
   rails (= 4.2.3)
   rails-assets-tether (>= 1.1.0)!
   rails_12factor
+  rmagick
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form (~> 3.0.0.rc)

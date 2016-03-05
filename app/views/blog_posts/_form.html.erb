@@ -1,0 +1,21 @@
+<div class="container profile">
+  <%= form_for @blog_post do |f| %>
+
+  <fieldset class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <%= f.label :body %>
+    <%= f.text_area :body, class: "form-control" %>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <%= f.file_field :photo, class: "form-control" %>
+  </fieldset>
+
+    <%= f.submit  class: 'btn btn-secondary' %>
+
+  <% end %>
+</div>

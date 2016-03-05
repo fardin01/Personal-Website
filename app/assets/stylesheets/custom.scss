@@ -35,11 +35,11 @@ button {
   border: solid 2px black;
   cursor: hand;
   min-width: 200px;
+  transition: 0.2s background-color linear, 0.1s color linear;
 }
 
 button:hover {
   background-color: black;
-  transition: 0.1s background-color linear, 0.1s color linear;
 }
 
 button:hover .btn{
@@ -121,8 +121,9 @@ a:active {
 .card {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto 100px;
+  margin: 20px;
   display: inline-block;
+  transition: width 2s, height 2s, background-color 2s, transform 1s;
 }
 
 .background-pic {
@@ -137,4 +138,19 @@ hr {
 
 .hidden {
   display: none;
+}
+
+.intro-p {
+  font-style: italic;
+  font-size: 35px;
+}
+
+.intro {
+  font-size: 65px;
+  margin-top: 210px;
+  color: white;
+}
+
+.enlarge:hover {
+  transform: scale(1.05);
 }

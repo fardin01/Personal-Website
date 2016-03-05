@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get "about", to: 'site#show'
   get "resume", to: 'site#cv'
 
-  resources "blog"
+  resources :blog_posts, :path => "blog"
   get 'contact', to: 'contacts#new'
   post 'contacts', to: 'contacts#create'
 
