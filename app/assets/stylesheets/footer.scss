@@ -9,6 +9,12 @@
   color: grey;
   margin-left: 10px;
   margin-right: 10px;
+  transition: width 2s, height 2s, background-color 2s, transform 0.3s;
+
+}
+
+.footer-social-btn:hover {
+  transform: scale(1.3);
 }
 
 .foot {

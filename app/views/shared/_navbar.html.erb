@@ -5,20 +5,25 @@
 
   <div class="jq-fadein">
     <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-      <%= link_to 'FARDIN KHANJANI', root_path, class: 'navbar-brand logo' %>
+      <%= link_to 'FARDIN KHANJANI', root_path, class: 'navbar-brand logo jq-fadein-click' %>
       <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
-          <%= link_to "About", about_path, class: 'nav-link' %>
+          <%= link_to "About", about_path, class: 'nav-link jq-fadein-click' %>
         </li>
         <li class="nav-item">
-          <%= link_to "Blog", blog_posts_path, class: 'nav-link' %>
+          <%= link_to "Blog", blog_posts_path, class: 'nav-link jq-fadein-click'%>
         </li>
         <li class="nav-item">
-          <%= link_to "Resume/CV", resume_path, class: 'nav-link' %>
+          <%= link_to "Resume/CV", resume_path, class: 'nav-link jq-fadein-click' %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contact", contact_path, class: 'nav-link' %>
+          <%= link_to "Contact", contact_path, class: 'nav-link jq-fadein-click' %>
         </li>
+        <% if admin? %>
+          <li class="nav-item">
+            <%= link_to "Log out", logout_path, class: 'nav-link' %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>

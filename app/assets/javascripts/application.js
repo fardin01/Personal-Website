@@ -17,4 +17,7 @@
 
 $(document).ready(function(){
   $('.jq-fadein').hide().delay(600).fadeIn(2000);
+  $('.jq-fadein-click').click(function() {
+    $('.jq-fadein').hide().delay(600).fadeIn(2000);
+});
 });

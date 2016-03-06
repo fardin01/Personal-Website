@@ -8,7 +8,10 @@ Rails.application.routes.draw do
   get 'contact', to: 'contacts#new'
   post 'contacts', to: 'contacts#create'
 
-
   get 'download-cv', to: 'site#download'
+
+  resources :sessions, only: [:create, :destroy]
+  get '/backdoor/login', to: 'sessions#new'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
 
 end

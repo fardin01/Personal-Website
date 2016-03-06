@@ -1,5 +1,6 @@
 class BlogPostsController < ApplicationController 
-  before_action :find_blog_post, only: [:show, :edit, :update]
+  before_action :find_blog_post, only: [:show, :edit, :update, :destroy]
+  before_action :authorize, except: [:index, :show]
 
   def index
     @blog_posts = BlogPost.all
@@ -17,7 +18,7 @@ class BlogPostsController < ApplicationController
     @blog_post.photo = params[:photo]
 
     if @blog_post.save
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:notice] = "Post created!"
       redirect_to blog_posts_path
     else
       render 'new'
@@ -29,11 +30,16 @@ class BlogPostsController < ApplicationController
 
   def update
     if @blog_post.update_attributes(blog_post_params)
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:notice] = "Post updated!"
       redirect_to @blog_post
     else
       render 'edit'
     end
+  end
+
+  def destroy
+    @blog_post.destroy
+    redirect_to blog_posts_path
   end
 
   private
@@ -43,6 +49,6 @@ class BlogPostsController < ApplicationController
   end
 
   def find_blog_post
-    @blog_post = BlogPost.find(params[:id])
+    @blog_post = BlogPost.friendly.find(params[:id])
   end
 end

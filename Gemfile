@@ -22,6 +22,8 @@ gem 'carrierwave'
 gem 'rmagick'
 gem "mini_magick"
 
+gem 'bcrypt', '3.1.7'
+
 gem 'friendly_id', '~> 5.1.0'
 
 gem 'uglifier', '>= 1.3.0'
