@@ -1,0 +1,10 @@
+@import "custom";
+
+input[type=submit] {
+    @extend button;
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+  color: white;
+}

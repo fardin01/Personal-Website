@@ -22,4 +22,43 @@
 @import "about";
 @import "cv";
 @import "blog_post";
+@import "home_page";
+@import "contact";
+
+/* iPad in portrait & landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+  .greeting {
+    margin-top: 300px;
+  }
+}
+
+
+
+/* iPhone 6 plus in portrait & landscape */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { /* STYLES GO HERE */}
+
+/* iPhone 6 in portrait & landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { /* STYLES GO HERE */}
+
+/* iPhone 5 & 5S in portrait & landscape */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+	.greeting-p {
+  		width: 70%;
+  	}
+
+  	.greeting {
+    margin-top: 300px;
+  }
+}
+
+
+
 

@@ -2,6 +2,10 @@
   margin-right: 60px;
 }
 
+.nav-link {
+  margin-right: 10px;
+}
+
 .logo {
   font-size: 22px;
   text-shadow: 0 0 1px #000000;
@@ -16,4 +20,9 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: black;
+}
+
+.navbar-brand .logo a:active {
+  text-decoration: none;
+  background-color: transparent;
 }

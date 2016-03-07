@@ -9,3 +9,16 @@
 .card:hover {
   color: black;
 }
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+  display: inline-block;
+  transition: width 2s, height 2s, background-color 2s, transform 1s;
+}
+
+.enlarge:hover {
+  transform: scale(1.05);
+}
+
