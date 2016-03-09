@@ -22,6 +22,8 @@ gem 'carrierwave'
 gem 'rmagick'
 gem "mini_magick"
 
+gem 'jquery-countdown-rails'
+
 gem 'bcrypt', '3.1.7'
 
 gem 'friendly_id', '~> 5.1.0'

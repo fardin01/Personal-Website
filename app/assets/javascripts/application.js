@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery.countdown
+//= require jquery.countdown-es
+
+$(function () { 
+	$('#timer').countdown({until: '+11d'});
+});
