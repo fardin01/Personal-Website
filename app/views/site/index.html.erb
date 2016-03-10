@@ -4,8 +4,8 @@
   <div class="profile home on-background">
     <h1 class="centered greeting jq-fadein">Hey. My name's Fardin. You can call me Freddie.</h1>
     <div class="centered jq-fadein" style="margin-top: 35px">
-      <button><%= link_to "My story",about_path, class: "btn" %></button>
-      <button><%= link_to "My resume",resume_path, class: "btn" %></button>
+      <div class="a-btn"><%= link_to "My story",about_path, class: "btn" %></div>
+      <div class="a-btn"><%= link_to "My resume",resume_path, class: "btn" %></div>
     </div>
   </div>
   <img src="/assets/bp4.jpg" class="background-pic">
@@ -40,7 +40,7 @@
 
 <div class="background-dark-grey">
   <div class="profile centered">
-      <button style="font-size: 25px"><%= link_to "Something interesting? Say hello!",contact_path, class: "btn" %></button>
+      <div class="a-btn" style="font-size: 25px"><%= link_to "Something interesting? Say hello!",contact_path, class: "btn" %></div>
   </div>
 </div>
 

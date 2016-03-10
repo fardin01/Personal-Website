@@ -1,7 +1,7 @@
 @import "custom";
 
 input[type=submit] {
-    @extend button;
+    @extend .a-btn;
     font-size: 20px;
 }
 
