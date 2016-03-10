@@ -17,6 +17,8 @@
 //= require jquery.countdown
 //= require jquery.countdown-es
 
+	
+
 $(function () { 
-	$('#timer').countdown({until: '+11d'});
+	$('#timer').countdown({until: new Date(Date.UTC(2016, 2, 20, 12, 0, 0))});
 });

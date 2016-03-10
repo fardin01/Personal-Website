@@ -21,6 +21,7 @@ end
 gem 'carrierwave'
 gem 'rmagick'
 gem "mini_magick"
+gem 'meta-tags'
 
 gem 'jquery-countdown-rails'
 
