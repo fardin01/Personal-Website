@@ -17,6 +17,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap_modify";
 @import "custom";
 @import "navbar";
 @import "footer";
@@ -26,9 +27,7 @@
 @import "home_page";
 @import "contact";
 
-.msg-responsive {
-	display: none;
-}
+
 
 @media only screen 
   and (max-device-width: 768px)
