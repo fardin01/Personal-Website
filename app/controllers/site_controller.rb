@@ -13,6 +13,7 @@ class SiteController < ApplicationController
   end
 
   def googled0a82c4a39ac538d
+    render layout: false
   end
 
   def download
