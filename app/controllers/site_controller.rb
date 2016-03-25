@@ -12,6 +12,9 @@ class SiteController < ApplicationController
   def cv
   end
 
+  def google
+  end
+
   def download
     file = "#{Rails.root}/fardin_khanjani_cv.pdf"
     if File.exists?(file)
