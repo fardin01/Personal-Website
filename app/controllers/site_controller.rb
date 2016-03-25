@@ -12,7 +12,7 @@ class SiteController < ApplicationController
   def cv
   end
 
-  def google
+  def googled0a82c4a39ac538d
   end
 
   def download

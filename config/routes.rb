@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'site#google'
+  root to: 'site#googled0a82c4a39ac538d'
 
   get "about", to: 'site#show'
   get "resume", to: 'site#cv'
