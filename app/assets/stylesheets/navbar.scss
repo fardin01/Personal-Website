@@ -1,28 +1,3 @@
-.navbar-nav{
-  margin-right: 60px;
-}
-
-.nav-link {
-  margin-right: 10px;
-}
-
-.logo {
-  font-size: 22px;
-  text-shadow: 0 0 1px #000000;
-  margin-left: 50px;
-}
-
-.navbar-fixed-top {
-  background-color: white;
-  border-bottom: solid 1px silver;
-  min-height: 60px; /* for the fadeIn on navbar */
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-}
-
-.navbar-brand .logo a:active {
-  text-decoration: none;
-  background-color: transparent;
+.navbar {
+  background: white;
 }

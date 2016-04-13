@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require bootstrap.min
  *= require_tree .
  *= require_self
  *= require jquery.countdown
@@ -17,87 +18,24 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "bootstrap_modify";
 @import "custom";
 @import "navbar";
 @import "footer";
-@import "about";
-@import "cv";
-@import "blog_post";
-@import "home_page";
-@import "contact";
 
-
-
-@media only screen 
-  and (max-device-width: 768px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-	.wrapper {
-		display: none;
-	}
-
-	.msg-responsive {
-		display: initial;
-	}
-
-	.greeting {
-	  margin-top: 200px;
-	  color: black;
-	  text-shadow: none;
-	  font-size: 80px;
-	}
-
-	p {
-		padding-top: 60px;
-		font-size: 35px;
-	}	
-
-	#timer {
-		height: 280px;
-		font-size: 65px;
-		margin-top: 200px;
-	}
-
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../assets/glyphicons-halflings-regular.eot');
+  src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+       url('../assets/glyphicons-halflings-regular.woff') format('woff'), 
+       url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), 
+       url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
-
-@media only screen 
-
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-  	.wrapper {
-		display: none;
-	}
-
-	.msg-responsive {
-		display: initial;
-	}
-
-	.greeting {
-	  margin-top: 0;
-	  color: black;
-	  text-shadow: none;
-	  font-size: 60px;
-	}
-
-	p {
-		padding-top: 60px;
-		font-size: 20px;
-	}
-
-	#timer {
-		height: 160px;
-		font-size: 40px;
-	}	
-
-	.centered {
-		padding-top: 20px;
-	}
-
+.intro img {
+	width: 330px;
+  height: 330px;
+  border-radius: 150px;
 }
-
 
 
 
