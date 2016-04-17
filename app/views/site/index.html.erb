@@ -1,52 +1,17 @@
 <% title "Home" %>
-
-<div class="background-light-grey">
-  <div class="profile home on-background">
-    <h1 class="centered greeting jq-fadein">Hey. My name's Fardin. You can call me Freddie.</h1>
-    <div class="centered jq-fadein" style="margin-top: 35px">
-      <div class="a-btn"><%= link_to "My story",about_path, class: "btn" %></div>
-      <div class="a-btn"><%= link_to "My resume",resume_path, class: "btn" %></div>
-    </div>
-  </div>
-  <img src="/assets/bp4.jpg" class="background-pic">
-</div>
-
-
-<div class="background-dark-grey">
-  <div class="profile centered">
-    <h1>In a nutshell</h1>
-    <p class="centered greeting-p">I have a passion for coding and learning new things. At the moment I am learning two new languages, Hungarian and Swedish, I'm practicing coding and studying at university at the same time</p>
+<div class="section1">
+  <div class="intro">
+    <img src="/assets/1.jpg" class="profile-pic">
+    <h1>Hey. My name is Fardin. You can call me Freddie</h1>
+    <button><%= link_to "My story",about_path, class: "btn" %></button>
+    <button><%= link_to "My resume",resume_path, class: "btn" %></button>
   </div>
 </div>
 
-<div class="background-light-grey">
-  <div class="profile centered">
-    <h1>My latest blog posts</h1>
-    <div class="container">
-    <% @blog_posts.each do |post| %>
-      <%= link_to(post) do %>
-        <div class="card enlarge">
-          <%= image_tag("#{post.photo}", class: "card-img-top") %>
-          <div class="card-block">
-            <h4 class="card-title"><%= post.title %></h4>
-            <p class="card-text"><%= truncate(post.body, length: 80) %></p>
-          </div>
-        </div>
-      <% end %>
-    <% end %><!-- link_to -->
-    </div>
-  </div>
+<div class="section2">
+  <img src="/assets/1.jpg" class="profile-pic">
+  <h1>Hey. My name is Fardin. You can call me Freddie</h1>
 </div>
+ 
 
-<div class="background-dark-grey">
-  <div class="profile centered">
-      <div class="a-btn" style="font-size: 25px"><%= link_to "Something interesting? Say hello!",contact_path, class: "btn" %></div>
-  </div>
-</div>
-
-
-<!--
-
-  <a href=http://www.filedropper.com/fardin-khanjani-cv><img src=http://www.filedropper.com/download_button.png width=127 height=145 border=0/></a><br /><div style=font-size:9px;font-family:Arial, Helvetica, sans-serif;width:127px;font-color:#44a854;> <a href=http://www.filedropper.com >online backup</a></div>
--->
-
+    
