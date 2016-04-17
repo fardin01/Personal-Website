@@ -11,7 +11,9 @@
       <%= link_to 'FARDIN KHANJANI', root_path, class: 'navbar-brand logo' %>
     </div>
 
-    <ul class="nav navbar-nav navbar-right">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path, class: 'nav-link' %></li>
         <li><%= link_to "Blog", blog_posts_path, class: 'nav-link'%></li>
         <li><%= link_to "Resume/CV", resume_path, class: 'nav-link' %></li>
@@ -20,5 +22,6 @@
           <li class="nav-item"><%= link_to "Log out", logout_path, class: 'nav-link' %></li>
         <% end %>
       </ul>
+    </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
