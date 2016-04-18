@@ -1,20 +1,21 @@
 @import "mixins";
 
 #intro {
-	background-image: url(b.jpg);
+	background-image: url(prlmnt2.jpg);
+	width: 100%;
 	h1{
 		font-weight: bold;
 		font-size: 40px;
 		text-align: center;
-		color: red;
+		color: white;
 		position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 50%;
+    width: 70%;
     height: 30%;
-    margin: auto;
+    margin: 20px auto auto auto;
 	}
 }
 
