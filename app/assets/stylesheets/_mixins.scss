@@ -1,0 +1,17 @@
+@mixin btn-base {
+	border: solid 2px black;
+	transition: 0.2s background-color linear, 0.1s color linear;
+
+	a {
+			color: black;
+		}
+
+		&:hover  {
+			background-color: black;
+
+		}
+
+		&:hover a {
+			color: white;
+		}
+}

@@ -1,15 +1,108 @@
-#intro {
-	background-image: url(bp.jpg); 
-}
+@import "mixins";
 
+#intro {
+	background-image: url(bridge.jpg); 
+	h1{
+		font-weight: bold;
+		font-size: 40px;
+		text-align: center;
+		color: red;
+		position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+	}
+}
 
 .intro {
 	text-align: center;
 	vertical-align: middle;
 	position: absolute;
-	bottom: 25%;
+	left: 0;
+	right: 0;
+	bottom: 4%;
+	margin: auto;
 }
 
-.intro div {
+.intro-btn {
+	@include btn-base;
+	display: inline-block;
+	min-width: 25%;
+	padding: 10px;
+	font-size: 25px;
+	font-weight: bold;
+
+
 }
 
+#nutshell {
+	background-color: #34495e;
+	font-size: 25px;
+	color: white;
+}
+
+#nutshell h1 {
+	margin-bottom: 4%;
+}
+
+#nutshell div {
+	width: 60%;
+	padding: 3% 0 3% 0;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#blog-gallery {
+	margin: 30px;
+}
+
+.panel {
+	/*  Below code does the transition on mouseleave */
+	transition: width 2s, height 2s, background-color 2s, transform 1s;
+	margin: 10px;
+}
+
+.panel:hover {
+	transition: width 2s, height 2s, background-color 2s, transform 1s;
+	transform: scale(1.03);
+}
+
+.panel-thumbnail {
+	position: relative;
+}
+
+.panel-thumbnail img {
+	width: 100%;
+	opacity: 0.7;
+}
+
+.panel-thumbnail p {
+	position: absolute;
+	top: 50%;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+}
+
+#say-hello {
+	background-color: #34495e;
+	padding: 60px;
+}
+
+.say-hello-btn {
+	@include btn-base;
+  font-size: 27px;
+	border: solid 2px black;
+	width: fit-content;
+	height: 30%;
+	padding: 15px;
+	margin: 0 auto;		
+}

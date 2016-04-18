@@ -14,17 +14,21 @@ body {
 }
 
 section {
-  border-bottom: solid 2px black;
-  height: 93%;
+  height: 768px;
   position: relative;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 .has-bg-pic {
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 
-h1 {
-	margin: 0;
+.auto-height {
+	height: auto;
 }
+
 

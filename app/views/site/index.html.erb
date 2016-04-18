@@ -1,11 +1,42 @@
 <% title "Home" %>
 
 <section id="intro" class="has-bg-pic">
+  <h1>Hey. My name is Fardin. You can call me Freddie</h1>
   <div class="intro">
-    <div>
-      <h1>Hey. My name is Fardin. You can call me Freddie</h1>
-      <button><%= link_to "My story",about_path, class: "btn" %></button>
-      <button><%= link_to "My resume",resume_path, class: "btn" %></button>
-    </div>
+      <div class="intro-btn"><%= link_to "My story",about_path %></div>
+      <div class="intro-btn"><%= link_to "My resume",resume_path %></div>
   </div>
+</section>
+
+<section id="nutshell" class="auto-height">
+  <div>
+    <h1>In a nutshell</h1>
+    <p class="">I have a passion for coding and learning new things. At the moment I am learning two new languages, Hungarian and Swedish, I'm practicing coding and studying at university at the same time</p>
+  </div>
+</section>
+
+
+<section id="blog-gallery" class="auto-height text-center">
+  <h1>Blog posts</h1>
+  <div class="row">
+    <% @blog_posts.each do |post| %>
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <%= link_to(post)  do %>
+            <div class="panel-thumbnail">
+              <%= image_tag("#{post.photo}") %>
+              <p><%= post.title %></p>
+            </div>
+            <div class="panel-body">
+              <%= truncate(post.body, length: 120) %></p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<section id="say-hello" class="auto-height text-center">
+  <div class="say-hello-btn"><%= link_to "Something interesting? Say hello!", contact_path %></div>
 </section>

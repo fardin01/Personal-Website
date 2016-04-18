@@ -16,9 +16,11 @@
  *= require jquery.countdown
  */
 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "custom";
+@import "index";
 @import "navbar";
 @import "footer";
 
@@ -29,12 +31,6 @@
        url('../assets/glyphicons-halflings-regular.woff') format('woff'), 
        url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), 
        url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
-
-.intro img {
-	width: 330px;
-  height: 330px;
-  border-radius: 150px;
 }
 
 
