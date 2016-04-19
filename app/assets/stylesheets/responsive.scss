@@ -1,0 +1,61 @@
+// All mobiles in portrate
+@media only screen 
+and (max-width: 415px) {
+	// Index
+  #intro h1 {
+  	font-size: 25px;
+  }
+
+	#nutshell div {
+		width: 90%;
+	}
+
+	.panel-thumbnail p {
+		font-size: 20px;
+		top: 30%;
+	}
+
+	.say-hello-btn {
+	  font-size: 20px;
+		height: 30%;
+		padding: 15px;
+		margin: 0 auto;		
+	}
+}
+
+// All mobiles in landscape
+@media only screen 
+and (min-width: 416px) 
+and (max-width: 667px) {
+	// Index
+	#intro h1 {
+  	font-size: 20px;
+  }
+
+  .intro {
+  	bottom: 2%;
+  }
+
+  .intro-btn {
+  	padding: 5px;
+  }
+
+  .panel-thumbnail p {
+		top: 40%;
+		font-size: 30px;
+	}
+
+	.say-hello-btn {
+	  font-size: 18px;
+	}
+}
+
+// iPad in portrait & landscape
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) { 
+
+	.panel-thumbnail p {
+		font-size: 25px;
+	}
+}
