@@ -3,8 +3,8 @@
 <section id="intro" class="has-bg-pic">
   <h1>Hey. My name is Fardin. You can call me Freddie</h1>
   <div class="intro">
-      <div class="intro-btn"><%= link_to "My story",about_path %></div>
-      <div class="intro-btn"><%= link_to "My resume",resume_path %></div>
+      <%= link_to "My story",about_path, class:"intro-btn" %>
+      <%= link_to "My resume",resume_path, class:"intro-btn" %>
   </div>
 </section>
 
@@ -38,5 +38,5 @@
 </section>
 
 <section id="say-hello" class="auto-height text-center">
-  <div class="say-hello-btn"><%= link_to "Something interesting? Say hello!", contact_path %></div>
+  <%= link_to "Something interesting? Say hello!", contact_path, class:"say-hello-btn" %>
 </section>

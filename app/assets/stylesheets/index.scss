@@ -1,7 +1,7 @@
 @import "mixins";
 
 #intro {
-	background-image: url(prlmnt2.jpg);
+	background-image: url(prlmnt.jpg);
 	width: 100%;
 	h1{
 		font-weight: bold;
@@ -36,6 +36,7 @@
 	padding: 10px;
 	font-size: 25px;
 	font-weight: bold;
+	color: black;
 
 
 }
@@ -97,7 +98,7 @@
 
 #say-hello {
 	background-color: #34495e;
-	padding: 60px;
+	padding: 60px 0 60px 0;
 }
 
 .say-hello-btn {
