@@ -34,10 +34,10 @@ and (max-width: 415px) {
 	  font-size: 17px;
 	}
 
-	// Show
+	// Show/About
 	#about-text {
 		padding: 20px;
-		font-size: 25px;
+		font-size: 17px;
 		text-align: justify;
 	}
 
@@ -51,6 +51,7 @@ and (max-width: 415px) {
 
 		h1{
 			margin: 0 10px 15px 0;
+			font-size: 30px;
 		}
 
 		p {
@@ -65,7 +66,7 @@ and (max-width: 415px) {
 		text-align: center;
 	}
 
-	// Resume
+	// CV/Resume
 	#cv {
 		h2 {
 			padding: 10px 0;
@@ -78,6 +79,7 @@ and (max-width: 415px) {
 
 	.cv-dl-btn {
 		width: 80%;
+		font-size: 20px;
 	}
 
 	// Contact
@@ -97,7 +99,21 @@ and (max-width: 415px) {
 // All mobiles in landscape
 @media only screen 
 and (min-width: 416px) 
-and (max-width: 667px) {
+and (max-width: 736px) {
+	// General
+	.pg-title {
+
+		h3 {
+			font-size: 25px;
+	}
+
+		h1 {
+			font-size: 40px;
+			font-weight: bold;
+		}
+	}
+
+
 	// Index
 	#intro h1 {
   	font-size: 20px;
@@ -118,6 +134,50 @@ and (max-width: 667px) {
 
 	.say-hello-btn {
 	  font-size: 18px;
+	}
+
+	// Show/About
+
+	.profile-pic {
+		display: block;
+		margin: 30px auto 0 auto;
+	}
+
+	#fun-facts {
+
+		p {
+			width: 80%;
+		}
+	}
+
+	// Resume/CV
+
+	#cv {
+		h2 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+
+	.cv-item {
+		border-bottom: solid 1px grey;
+	}
+
+	.cv-dl-btn {
+		width: 60%;
+	}
+
+	// Contact
+	#contact-form {
+		text-align: center;
+	}
+
+	.contact-data {
+		margin-bottom: 50px;
+	}
+
+	.submit-btn {
+		margin-top: 35px;
 	}
 }
 
