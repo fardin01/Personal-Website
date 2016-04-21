@@ -1,0 +1,15 @@
+@import 'mixins';
+
+#cv-header {
+	background-image: url(working.jpg);
+}
+
+.cv-dl-btn {
+	@include btn-base;
+	padding: 22px;
+	display: block;
+	width: 34%;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 23px;
+}

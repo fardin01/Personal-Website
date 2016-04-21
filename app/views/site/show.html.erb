@@ -1,48 +1,48 @@
 <% title "About me" %>
 
 
-<section id="about-me" class="has-bg-pic">
+<section id="about-header" class="has-bg-pic">
+  <div class="pg-title">
+      <h3>Read about me and</h3>
+      <h1>MY JOURNEY SO FAR</h1>
+  </div>
 </section>
 
-
-
-
-<div class="profile on-background">
-  <h1 class="centered intro">
-    <p class="intro-p">Read about me and</p>
-    <strong>MY JOURNEY SO FAR</strong>
-  </h1>
-</div>
-
-<img src="/assets/train.jpg" class="background-pic">
-
-<div class="background-light-grey">
-  <div class="about container">
-    <div class="col-sm-6">
-      <div class="about-profile">
+<section id="about-text" class="auto-height">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-1">
+      <div class="about-text">
         <p>I'm a 24 year old energetic cheerful last year student who loves to discuss ideas and turn them into reality. I've been living in Europe for over 8 years and have done various jobs from Market research to managing rental apartments to hosting live TV shows.</p>
 
         <p>After I heard about coding and web apps I grew a passion for writing code and creating useful apps. That's how this website came into life as my very first project. Ruby on Rails is my weapon of choice and Javascript is on the way.</p>
 
-        <p>My university major however is Business Studies. It covers various aspects of Business from International trade and transactions to Marketing and Communications. 
+        <p>My university major however is Business Studies. It covers various aspects of Business from International trade and transactions to Marketing and Communications.</p>
 
         <p>In my free time I'd like to read, code, cook and spend time with friends and colleagues.</p>
       </div>
     </div>
 
-    <div class="col-sm-5 pull-right">
+    <div class="col-sm-3 col-sm-offset-1">
       <img src="/assets/1.jpg" class="profile-pic">
-    </div>
+    </div>  
   </div>
-</div>
+</section>
 
-<div class="background-dark-grey">
-  <div class="profile centered">
+<section id="fun-facts" class="auto-height">
+  <div>
     <h1>Some fun facts about me</h1>
-    <p class="centered greeting-p">I like my coffee bitter, I'm afraid of height, I cannot decide wheter penguins are my favorite animal or pandas, I am a hardcore 'Friends' fan, foodie, I love airports, I prefer cold weather to hot and I prefer MacBook to PC every time</p>
+    <p>I like my coffee bitter, I'm afraid of height, I cannot decide wheter penguins are my favorite animal or pandas, I am a hardcore 'Friends' fan, foodie, I love airports, I prefer cold weather to hot and I prefer MacBook to PC every time</p>
   </div>
 
+  <%= link_to "Check out my resume", resume_path, class: 'checkout-resume-btn'%>
+
+</section>
+
+
+<!-- 
   <div class="hr centered" style="margin-bottom: 20px"></div>
 
   <div class="centered"><%= link_to "Check out my resume", resume_path, class: 'btn a-btn'%></div>
 </div>
+
+-->

@@ -15,11 +15,10 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap.min
-//= require jquery.countdown
-//= require jquery.countdown-es
+//= require animsition.min
 //= require_tree .
 
 
 $(function () { 
-		$('#timer').countdown({until: new Date(Date.UTC(2016, 4, 29, 12, 0, 0))});
+		$(".animsition").animsition();
 });

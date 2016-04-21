@@ -1,46 +1,46 @@
 <% title "Contact me" %>
 
-
-<div class="profile on-background">
-  <h1 class="centered intro">
+<section id="contact-header" class="has-bg-pic">
+  <div class="pg-title">
     <% if flash[:contact] %> 
-      <p class="notice intro-p"><%= flash[:contact] %></p>
+      <p class="notice"><%= flash[:contact] %></p>
     <% else %>
-      <p class="intro-p">Say</p>
-      <strong>HELLO</strong>
-    <% end %>
-  </h1>
-</div>
-
-<img src="/assets/golden-gate.jpg" class="background-pic">
-
-<div class="container profile" style="margin-bottom: 80px">
-  <div class="col-sm-6 centered">
-    <h4>CONTACT INFORMATION</h4>
-    <p>Fardin Khanjani</p>
-    <p>Budapest, Hungary</p>
-    <p>+36 70 466 1931</p>
-    <p>khanjani.fardin@gmail.com</p>
-  </div>
-
-  <div class="col-sm-6 centered">
-    <%= form_for @contact do |f| %>
-      <fieldset class="form-group">
-        <%= f.label :name %>
-        <%= f.text_field :name, class: "form-control" %>
-      </fieldset>
-
-      <fieldset class="form-group">
-        <%= f.label :email %>
-        <%= f.text_field :email, class: "form-control" %>
-      </fieldset>
-
-      <fieldset class="form-group">
-        <%= f.label :message %>
-        <%= f.text_area :message, class: "form-control" %>
-      </fieldset>
-
-      <%= f.submit "Send" %>
+      <h3>Say</h3>
+      <h1>HELLO</h1>
     <% end %>
   </div>
-</div>
+</section>
+
+
+<section id="contact-form" class="auto-height">
+  <div class="container">
+    <div class="col-sm-6">
+      <h4>CONTACT INFORMATION</h4>
+      <p>Fardin Khanjani</p>
+      <p>Budapest, Hungary</p>
+      <p>+36 70 466 1931</p>
+      <p>khanjani.fardin@gmail.com</p>
+    </div>
+
+    <div class="col-sm-6">
+      <%= form_for @contact do |f| %>
+        <fieldset class="form-group">
+          <%= f.label :name %>
+          <%= f.text_field :name, class: "form-control" %>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <%= f.label :email %>
+          <%= f.text_field :email, class: "form-control" %>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <%= f.label :message %>
+          <%= f.text_area :message, class: "form-control" %>
+        </fieldset>
+
+        <%= f.submit "Send" class: "submit-btn" %>
+      <% end %>
+    </div>
+  </div>
+</section>

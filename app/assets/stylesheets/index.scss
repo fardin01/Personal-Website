@@ -45,7 +45,6 @@
 	background-color: #34495e;
 	font-size: 25px;
 	color: white;
-	border-top: none; //because the section on top of #nutshell has a border-bottom
 }
 
 #nutshell h1 {
@@ -61,8 +60,7 @@
 }
 
 #blog-gallery {
-	margin: 30px;
-	border: none;
+	padding: 20px 20px 40px 20px;
 }
 
 .panel {

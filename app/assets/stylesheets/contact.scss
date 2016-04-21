@@ -1,0 +1,13 @@
+@import "mixins";
+
+#contact-header {
+	background-image: url(golden-gate.jpg);
+}
+
+#contact-form {
+	padding: 45px 0;
+}
+
+.submit-btn {
+	@include btn-base;
+}

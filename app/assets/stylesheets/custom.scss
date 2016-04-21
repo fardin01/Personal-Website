@@ -8,6 +8,12 @@ html, body {
 	padding: 0;
 }
 
+.row {
+	width: 100%;
+	// because row's widths is more than container and adds horizontal scroolbar
+	margin: 0;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   padding-top: 50px; /* This is for fixed nav bar overlap with the content */ 
@@ -17,7 +23,6 @@ section {
   height: 100%;
   position: relative;
   border-top: solid 2px #1abc9c;
-  border-bottom: solid 2px #1abc9c;
 }
 
 a:hover {
@@ -35,4 +40,18 @@ a:hover {
 	height: auto;
 }
 
+.pg-title {
+	color: white;
+	text-align: center;
+	margin-top: 20%;
+
+	h3 {
+		font-size: 45px;
+	}
+
+	h1 {
+		font-size: 55px;
+		font-weight: bold;
+	}
+}
 

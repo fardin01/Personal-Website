@@ -1,29 +1,31 @@
 <% title "Blog" %>
 
-<div class="profile on-background">
-  <h1 class="centered intro">
-    <p class="intro-p">My thoughts and</p>
-    <strong>Blog Posts</strong>
-  </h1>
-</div>
+<section id="blog-header" class="has-bg-pic">
+  <div class="pg-title">
+      <h3>My thoughts and</h3>
+      <h1>BLOG POSTS</h1>
+  </div>
+</section>
 
-<img src="/assets/blog.jpg" class="background-pic">
-
-<div class="background-light-grey">
+<section id="blog-gallery" class="auto-height">
   <% if admin? %>
       <button class="centered"><%= link_to "New Post", new_blog_post_path %></button>
     <% end %>
-  <div class="profile centered">
+  <div class="row">
     <% @blog_posts.each do |post| %>
-      <%= link_to(post) do %>
-        <div class="card enlarge">
-          <%= image_tag("#{post.photo}", class: "card-img-top") %>
-          <div class="card-block">
-            <h4 class="card-title"><%= post.title %></h4>
-            <p class="card-text"><%= truncate(post.body, length: 80) %></p>
-          </div>
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <%= link_to(post)  do %>
+            <div class="panel-thumbnail">
+              <%= image_tag("#{post.photo}") %>
+              <p><%= post.title %></p>
+            </div>
+            <div class="panel-body">
+              <%= truncate(post.body, length: 120) %></p>
+            </div>
+          <% end %>
         </div>
-      <% end %>
-    <% end %><!-- link_to -->
+      </div>
+    <% end %>
   </div>
-</div>
+</section>
