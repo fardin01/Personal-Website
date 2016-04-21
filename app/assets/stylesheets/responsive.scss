@@ -1,3 +1,5 @@
+@import "mixins";
+
 // All mobiles in portrate
 @media only screen 
 and (max-width: 415px) {
@@ -61,6 +63,34 @@ and (max-width: 415px) {
 	// Blog
 	#blog-gallery {
 		text-align: center;
+	}
+
+	// Resume
+	#cv {
+		h2 {
+			padding: 10px 0;
+		}
+
+		.cv-item {
+			border-bottom: solid 1px grey;
+		}
+	}
+
+	.cv-dl-btn {
+		width: 80%;
+	}
+
+	// Contact
+	#contact-form {
+		text-align: center;
+	}
+
+	.contact-data {
+		margin-bottom: 50px;
+	}
+
+	.submit-btn {
+		margin-top: 35px;
 	}
 }
 

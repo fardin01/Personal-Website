@@ -9,5 +9,8 @@
 }
 
 .submit-btn {
+	background: none;
 	@include btn-base;
+	padding: 5px 40px 5px 40px;
+	font-size: 25px;
 }
