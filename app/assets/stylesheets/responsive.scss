@@ -66,6 +66,11 @@ and (max-width: 415px) {
 		text-align: center;
 	}
 
+	.blog-post-body {
+		padding: 20px 5px 20px 5px;
+		text-align: justify;
+	}
+
 	// CV/Resume
 	#cv {
 		h2 {
@@ -148,6 +153,12 @@ and (max-width: 736px) {
 		p {
 			width: 80%;
 		}
+	}
+
+	// Blog
+	.blog-post-body {
+		padding: 20px 5px 20px 5px;
+		text-align: justify;
 	}
 
 	// Resume/CV

@@ -1,17 +1,23 @@
 <% title "#{@blog_post.title}" %>
 
-<div class="container">
-  <h1 class="centered profile"><%= @blog_post.title %></h1>
-  <div class="blog-body">
+<section id="blog-post" class="has-bg-pic" style='background-image: url(<%= @blog_post.photo_url %>)'>
+  <div class="pg-title">
+    <h1><%= @blog_post.title %></h1>
+  </div>
+</section>
+
+<section id="blog-post-body" class="auto-height">
+  <div class="blog-post-body">
     <%= simple_format(@blog_post.body) %>
   </div>
-</div>
+</section>
 
 <% if admin? %>
-  <button class="centered">
+  <button>
     <%= link_to "Edit this post", edit_blog_post_path(@blog_post) %>
   </button>
-  <button class="centered">
+  <button>
     <%= link_to "Delete this post", blog_post_path, method: :delete %>
   </button>
 <% end %>
+

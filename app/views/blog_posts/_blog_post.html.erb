@@ -1,0 +1,13 @@
+<div class="col-sm-6">
+  <div class="panel panel-default" data-id="<%= blog_post.id %>">
+    <%= link_to(blog_post)  do %>
+      <div class="panel-thumbnail">
+        <%= image_tag("#{blog_post.photo}") %>
+        <p><%= blog_post.title %></p>
+      </div>
+      <div class="panel-body">
+        <%= truncate(blog_post.body, length: 120) %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
