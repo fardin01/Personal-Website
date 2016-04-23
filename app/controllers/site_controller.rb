@@ -1,6 +1,6 @@
 class SiteController < ApplicationController
   def index
-    @blog_posts = BlogPost.first(4)
+    @blog_posts = BlogPost.first(2)
   end
 
   def show

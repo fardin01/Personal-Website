@@ -3,7 +3,15 @@ class BlogPostsController < ApplicationController
   before_action :authorize, except: [:index, :show]
 
   def index
-    @blog_posts = BlogPost.all
+    if params[:id]
+      @blog_posts = BlogPost.where('id < ?', params[:id]).limit(5)
+    else
+      @blog_posts = BlogPost.first(2)
+    end
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def new
