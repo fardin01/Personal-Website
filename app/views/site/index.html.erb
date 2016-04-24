@@ -18,13 +18,16 @@
 <section id="blog-gallery" class="auto-height text-center">
   <h1>Blog posts</h1>
   <div class="row">
-  <%= render @blog_posts %>
-    <%= image_tag "ajax-loader.gif", style: "display:none;", class: "loading-gif" %>
-    <%= link_to "Load More", blog_posts_path, class: "load-more" %>
+    <%= render @blog_posts %>
   </div>
 
-  <div class="load-more-container">
+  <%= javascript_tag do %>
+    window.post_count = <%= BlogPost.all.count %>
+  <% end %>
 
+  <div class="load-more-div">
+    <%= image_tag "ajax-loader.gif", style: "display:none;", class: "loading-gif" %>
+    <%= link_to "Older posts", blog_posts_path, class: "load-more" %>
   </div>
 </section>
 

@@ -4,6 +4,15 @@
 	background-image: url(working.jpg);
 }
 
+.works {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.cv-item {
+	border-bottom: solid 1px grey;
+}
+
 .cv-dl-btn {
 	@include btn-base;
 	padding: 22px;

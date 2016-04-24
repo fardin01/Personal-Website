@@ -1,3 +1,5 @@
+@import "mixins";
+
 html, body {
   margin:0;
   height:100%;
@@ -55,8 +57,13 @@ a:hover {
 	}
 }
 
+.load-more-div {
+	width: 30%;
+	margin: 60px auto 30px auto;
+}
 
-@import "mixins";
 .load-more {
 	@include btn-base;
+	padding: 20px 30px 20px 30px;
+	font-size: 25px;
 }

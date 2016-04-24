@@ -1,6 +1,14 @@
 class SiteController < ApplicationController
   def index
-    @blog_posts = BlogPost.first(2)
+    if params[:id]
+      @blog_posts = BlogPost.where('id < ?', params[:id]).limit(2)
+    else
+      @blog_posts = BlogPost.first(2)
+    end
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def show

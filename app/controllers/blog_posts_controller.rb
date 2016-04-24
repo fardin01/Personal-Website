@@ -4,7 +4,7 @@ class BlogPostsController < ApplicationController
 
   def index
     if params[:id]
-      @blog_posts = BlogPost.where('id < ?', params[:id]).limit(5)
+      @blog_posts = BlogPost.where('id < ?', params[:id]).limit(2)
     else
       @blog_posts = BlogPost.first(2)
     end

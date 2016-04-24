@@ -71,14 +71,15 @@ and (max-width: 415px) {
 		text-align: justify;
 	}
 
+	.load-more-div {
+		width: 80%;
+	}
+
 	// CV/Resume
 	#cv {
 		h2 {
 			padding: 10px 0;
-		}
-
-		.cv-item {
-			border-bottom: solid 1px grey;
+			font-size: 24px;
 		}
 	}
 
@@ -159,6 +160,10 @@ and (max-width: 736px) {
 	.blog-post-body {
 		padding: 20px 5px 20px 5px;
 		text-align: justify;
+	}
+
+	.load-more-div {
+		width: 80%;
 	}
 
 	// Resume/CV
